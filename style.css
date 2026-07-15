@@ -1342,3 +1342,26 @@ opacity:1;
 transform:translateY(0);
 }
 }
+.show-menu{
+display:flex !important;
+flex-direction:column;
+position:absolute;
+top:80px;
+right:20px;
+width:260px;
+background:rgba(8,17,32,.95);
+padding:20px;
+border-radius:18px;
+backdrop-filter:blur(15px);
+gap:20px;
+box-shadow:0 15px 35px rgba(0,0,0,.3);
+}
+
+.nav-links a.active{
+color:#f59e0b;
+font-weight:700;
+}
+
+.visible{
+animation:fadeUp .8s ease;
+}

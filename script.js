@@ -97,55 +97,61 @@ document.querySelectorAll(".section").forEach(sec=>{
 
 });
 
-// Counter Animation
+/* ==========================================
+   COUNTER ANIMATION
+========================================== */
 
-const counters=document.querySelectorAll(".achievement-card h2");
+const counters=document.querySelectorAll(".counter");
 
-counters.forEach(counter=>{
+const speed=120;
+
+const counterObserver=new IntersectionObserver(entries=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+const counter=entry.target;
+
+const target=+counter.dataset.target;
+
+let count=0;
 
 const update=()=>{
 
-const target=counter.innerText;
+const increment=Math.ceil(target/speed);
 
-if(isNaN(target)) return;
+count+=increment;
 
-let current=+counter.getAttribute("data-count")||0;
+if(count<target){
 
-const increment=Math.ceil(target/60);
+counter.innerText=count;
 
-if(current<target){
-
-current+=increment;
-
-counter.innerText=current;
-
-counter.setAttribute("data-count",current);
-
-setTimeout(update,20);
+requestAnimationFrame(update);
 
 }else{
 
-counter.innerText=target;
+counter.innerText=target+"+";
 
 }
 
-}
+};
 
 update();
 
-});
-
-// Current Year
-
-const footer=document.querySelector("footer p:last-child");
-
-if(footer){
-
-footer.innerHTML=`© ${new Date().getFullYear()} Richard Ayooluwa Ogunyemi | Founder & CEO, Softlink Technology. All Rights Reserved.`;
+counterObserver.unobserve(counter);
 
 }
 
-console.log("Softlink Technology Portfolio Loaded Successfully");
+});
+
+},{threshold:.5});
+
+counters.forEach(counter=>{
+
+counterObserver.observe(counter);
+
+});
 /* ==========================================
    FLOATING PARTICLES
 ========================================== */

@@ -1117,3 +1117,228 @@ grid-template-columns:1fr;
 }
 
 }
+/* ==========================================
+   SKILLS SECTION
+========================================== */
+
+.skills-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+gap:20px;
+}
+
+.skill-card{
+padding:22px;
+text-align:center;
+font-size:18px;
+font-weight:600;
+color:#fff;
+cursor:pointer;
+}
+
+.skill-card:hover{
+background:linear-gradient(135deg,var(--primary),var(--secondary));
+transform:translateY(-8px) scale(1.03);
+}
+
+/* ==========================================
+   ACHIEVEMENTS
+========================================== */
+
+.achievement-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+gap:25px;
+}
+
+.achievement-card{
+padding:35px;
+text-align:center;
+}
+
+.achievement-card h2{
+font-size:48px;
+color:var(--accent);
+margin-bottom:10px;
+}
+
+.achievement-card h4{
+font-size:22px;
+margin-bottom:15px;
+}
+
+.achievement-card p{
+color:#dbe4ef;
+}
+
+/* ==========================================
+   WHY CHOOSE ME
+========================================== */
+
+.why-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.why-card{
+padding:30px;
+}
+
+.why-card h3{
+margin-bottom:15px;
+font-size:22px;
+color:#fff;
+}
+
+.why-card p{
+color:#dbe4ef;
+line-height:1.8;
+}
+
+/* ==========================================
+   CONTACT
+========================================== */
+
+.contact-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+.contact-card{
+padding:40px;
+text-align:center;
+}
+
+.contact-icon{
+font-size:48px;
+margin-bottom:20px;
+}
+
+.contact-card h3{
+font-size:24px;
+margin-bottom:10px;
+}
+
+.contact-card p{
+margin-bottom:25px;
+color:#dbe4ef;
+}
+
+/* ==========================================
+   CTA
+========================================== */
+
+.cta{
+padding:100px 20px;
+text-align:center;
+background:linear-gradient(135deg,#1d4ed8,#059669);
+}
+
+.cta h2{
+font-size:42px;
+margin-bottom:20px;
+}
+
+.cta p{
+max-width:700px;
+margin:0 auto 35px;
+font-size:18px;
+color:#eef6ff;
+}
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+footer{
+padding:70px 0 30px;
+background:#050b17;
+text-align:center;
+}
+
+.footer-logo h2{
+font-size:34px;
+margin-bottom:10px;
+}
+
+.footer-logo p{
+color:#cbd5e1;
+margin-bottom:35px;
+}
+
+.footer-links{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:25px;
+margin-bottom:35px;
+}
+
+.footer-links a{
+color:#fff;
+text-decoration:none;
+transition:.3s;
+}
+
+.footer-links a:hover{
+color:var(--accent);
+}
+
+.footer-social{
+display:flex;
+justify-content:center;
+gap:20px;
+margin-bottom:30px;
+}
+
+.footer-social a{
+width:50px;
+height:50px;
+display:flex;
+justify-content:center;
+align-items:center;
+border-radius:50%;
+background:rgba(255,255,255,.08);
+color:#fff;
+font-size:20px;
+text-decoration:none;
+transition:.3s;
+}
+
+.footer-social a:hover{
+background:linear-gradient(135deg,var(--primary),var(--secondary));
+transform:translateY(-5px);
+}
+
+footer hr{
+border:none;
+height:1px;
+background:rgba(255,255,255,.12);
+margin:30px 0;
+}
+
+footer p:last-child{
+color:#94a3b8;
+font-size:15px;
+}
+
+/* ==========================================
+   SIMPLE FADE-IN ANIMATION
+========================================== */
+
+.section{
+animation:fadeUp .8s ease both;
+}
+
+@keyframes fadeUp{
+from{
+opacity:0;
+transform:translateY(40px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}

@@ -146,3 +146,32 @@ footer.innerHTML=`© ${new Date().getFullYear()} Richard Ayooluwa Ogunyemi | Fou
 }
 
 console.log("Softlink Technology Portfolio Loaded Successfully");
+/* ==========================================
+   FLOATING PARTICLES
+========================================== */
+
+function createParticle(){
+
+const particle=document.createElement("div");
+
+particle.className="particle";
+
+particle.style.left=Math.random()*100+"vw";
+
+particle.style.animationDuration=(10+Math.random()*12)+"s";
+
+particle.style.opacity=Math.random();
+
+particle.style.width=(4+Math.random()*8)+"px";
+
+particle.style.height=particle.style.width;
+
+document.body.appendChild(particle);
+
+setTimeout(()=>{
+particle.remove();
+},22000);
+
+}
+
+setInterval(createParticle,500);

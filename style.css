@@ -1434,3 +1434,42 @@ transform:translateY(-120vh) scale(1);
 opacity:0;
 }
 }
+/* ==========================================
+   ANIMATED COUNTERS
+========================================== */
+
+.achievement-icon{
+
+font-size:55px;
+
+margin-bottom:20px;
+
+color:var(--accent);
+
+transition:.4s;
+
+}
+
+.achievement-card:hover .achievement-icon{
+
+transform:rotateY(360deg);
+
+color:#ffffff;
+
+}
+
+.counter{
+
+font-size:60px;
+
+font-weight:800;
+
+margin-bottom:10px;
+
+background:linear-gradient(90deg,#ffffff,#f59e0b);
+
+-webkit-background-clip:text;
+
+-webkit-text-fill-color:transparent;
+
+}

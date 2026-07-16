@@ -1614,3 +1614,107 @@ margin-left:20px;
 }
 
 }
+/* ==========================================
+   HERO AVATAR
+========================================== */
+
+.avatar-card{
+
+position:relative;
+
+padding:18px;
+
+border-radius:30px;
+
+background:rgba(255,255,255,.06);
+
+backdrop-filter:blur(18px);
+
+border:1px solid rgba(255,255,255,.10);
+
+box-shadow:0 20px 60px rgba(37,99,235,.25);
+
+overflow:hidden;
+
+animation:floatCard 6s ease-in-out infinite;
+
+}
+
+.hero-avatar{
+
+display:block;
+
+width:100%;
+
+height:auto;
+
+border-radius:22px;
+
+}
+
+.avatar-card::before{
+
+content:"";
+
+position:absolute;
+
+top:-50%;
+
+left:-50%;
+
+width:200%;
+
+height:200%;
+
+background:linear-gradient(
+45deg,
+transparent,
+rgba(255,255,255,.08),
+transparent
+);
+
+transform:rotate(25deg);
+
+animation:shine 8s linear infinite;
+
+pointer-events:none;
+
+}
+
+@keyframes floatCard{
+
+0%{
+
+transform:translateY(0px);
+
+}
+
+50%{
+
+transform:translateY(-12px);
+
+}
+
+100%{
+
+transform:translateY(0px);
+
+}
+
+}
+
+@keyframes shine{
+
+0%{
+
+transform:translateX(-100%) rotate(25deg);
+
+}
+
+100%{
+
+transform:translateX(100%) rotate(25deg);
+
+}
+
+   }

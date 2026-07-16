@@ -218,3 +218,10 @@ const observer = new IntersectionObserver((entries) => {
 });
 
 counters.forEach(counter => observer.observe(counter));
+window.addEventListener("load", function () {
+    const loader = document.getElementById("loader");
+
+    if (loader) {
+        loader.style.display = "none";
+    }
+});

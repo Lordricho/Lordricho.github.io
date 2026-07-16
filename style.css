@@ -186,8 +186,6 @@ z-index:10;
     z-index:10;
 }
 
-}
-
 .logo span{
 
 color:var(--accent);
@@ -1473,7 +1471,7 @@ background:linear-gradient(90deg,#ffffff,#f59e0b);
 TIMELINE
 ========================================== */
 
-.timeline-wrapper{
+.timeline-wrapper::before
 
 position:relative;
 

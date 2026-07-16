@@ -1957,3 +1957,50 @@ footer{
 footer p:last-child{
     margin-bottom:0;
 }
+/* ================= PROJECTS ================= */
+
+.projects-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+margin-top:50px;
+}
+
+.project-card{
+background:#ffffff;
+border-radius:20px;
+padding:30px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.project-card:hover{
+transform:translateY(-10px);
+}
+
+.project-icon{
+font-size:50px;
+margin-bottom:20px;
+}
+
+.project-tags{
+display:flex;
+flex-wrap:wrap;
+gap:10px;
+margin:20px 0;
+}
+
+.project-tags span{
+background:#eef4ff;
+padding:8px 15px;
+border-radius:20px;
+font-size:14px;
+font-weight:600;
+}
+
+.project-buttons{
+display:flex;
+gap:10px;
+margin-top:20px;
+flex-wrap:wrap;
+}

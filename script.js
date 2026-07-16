@@ -181,3 +181,40 @@ particle.remove();
 }
 
 setInterval(createParticle,500);
+// ==========================================
+// Animated Counters
+// ==========================================
+
+const counters = document.querySelectorAll('.counter');
+
+const animateCounter = (counter) => {
+    const target = +counter.getAttribute('data-target');
+    const speed = 40;
+
+    const updateCounter = () => {
+        const current = +counter.innerText;
+        const increment = Math.ceil(target / speed);
+
+        if (current < target) {
+            counter.innerText = Math.min(current + increment, target);
+            setTimeout(updateCounter, 40);
+        } else {
+            counter.innerText = target;
+        }
+    };
+
+    updateCounter();
+};
+
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            animateCounter(entry.target);
+            observer.unobserve(entry.target);
+        }
+    });
+}, {
+    threshold: 0.5
+});
+
+counters.forEach(counter => observer.observe(counter));

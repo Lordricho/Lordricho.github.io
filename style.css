@@ -1936,3 +1936,24 @@ gap:20px;
 flex-wrap:wrap;
 
 }
+/* Remove extra white space at bottom */
+
+html,
+body{
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+}
+
+body{
+    min-height:100vh;
+}
+
+footer{
+    margin-bottom:0;
+    padding-bottom:30px;
+}
+
+footer p:last-child{
+    margin-bottom:0;
+}

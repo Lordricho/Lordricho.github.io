@@ -731,22 +731,22 @@ display:block;
 
 }
 
-.hero-left h1{
-
-font-size:40px;
-
+.hero-text h4{
+    font-size:18px;
 }
 
-.hero-left h2{
-
-font-size:22px;
-
+.hero-text h1{
+    font-size:30px;
+    line-height:1.2;
 }
 
-.hero-left p{
+.hero-text h2{
+    font-size:20px;
+    line-height:1.4;
+}
 
-font-size:16px;
-
+.hero-text p{
+    font-size:15px;
 }
 
 .avatar-card{

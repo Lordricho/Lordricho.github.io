@@ -2176,3 +2176,60 @@ color:#fff;
     }
 
 }
+/* ===== MOBILE HERO FIX ===== */
+
+@media (max-width:768px){
+
+.hero{
+    padding:110px 20px 60px;
+    text-align:center;
+}
+
+.hero-container{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.hero-left,
+.hero-right{
+    width:100%;
+}
+
+.hero-badge{
+    display:inline-block;
+    max-width:100%;
+    font-size:12px;
+    padding:8px 14px;
+    margin:0 auto 20px;
+}
+
+.hero-left h1{
+    font-size:32px;
+    line-height:1.2;
+}
+
+.hero-left h2{
+    font-size:20px;
+}
+
+.hero-left p{
+    font-size:15px;
+}
+
+.avatar-card{
+    width:220px;
+    height:220px;
+    margin:30px auto 0;
+}
+
+.hero-buttons{
+    justify-content:center;
+}
+
+.hero-social{
+    justify-content:center;
+}
+
+}

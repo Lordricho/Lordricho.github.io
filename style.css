@@ -2295,3 +2295,29 @@ color:#fff;
     font-weight:600;
     margin-bottom:12px;
 }
+/* ===== HERO NAME ===== */
+
+.hero h1{
+    font-size:64px;
+    font-weight:800;
+    line-height:1.1;
+    background:linear-gradient(90deg,#60a5fa,#ffffff,#fbbf24);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    background-clip:text;
+}
+/* ===== LOGO ===== */
+
+.logo{
+    font-size:30px;
+    font-weight:800;
+    text-decoration:none;
+    color:#60a5fa;
+}
+
+.logo span{
+    background:linear-gradient(90deg,#fbbf24,#ffffff,#10b981);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    background-clip:text;
+}

@@ -1,25 +1,28 @@
-// Hide Loading Screen
+// ===============================
+// LOADER
+// ===============================
 window.onload = function () {
     const loader = document.getElementById("loader");
-
     if (loader) {
         loader.style.display = "none";
     }
 };
 
-// Mobile Menu
-const menuBtn = document.querySelector(".menu-btn");
-const navLinks = document.querySelector(".nav-links");
+// ===============================
+// MOBILE MENU
+// ===============================
+const menuBtn = document.getElementById("menuBtn");
+const navMenu = document.getElementById("navMenu");
 
-if (menuBtn) {
-    menuBtn.addEventListener("click", function () {
-        navLinks.classList.toggle("show-menu");
+if (menuBtn && navMenu) {
+    menuBtn.addEventListener("click", () => {
+        navMenu.classList.toggle("show-menu");
     });
 }
 
 // Close menu after clicking a link
-document.querySelectorAll(".nav-links a").forEach(link => {
+document.querySelectorAll("#navMenu a").forEach(link => {
     link.addEventListener("click", () => {
-        navLinks.classList.remove("show-menu");
+        navMenu.classList.remove("show-menu");
     });
 });

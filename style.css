@@ -883,3 +883,76 @@ color:#dbe4ef;
 line-height:1.8;
 
 }
+/* ==========================================
+   SERVICES
+========================================== */
+
+.services{
+
+padding:110px 0;
+
+}
+
+.services-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+gap:30px;
+
+}
+
+.service-card{
+
+padding:40px;
+
+background:rgba(255,255,255,.05);
+
+border:1px solid rgba(255,255,255,.10);
+
+border-radius:25px;
+
+backdrop-filter:blur(18px);
+
+transition:.35s;
+
+text-align:center;
+
+}
+
+.service-card:hover{
+
+transform:translateY(-10px);
+
+border-color:#2563eb;
+
+box-shadow:0 20px 45px rgba(37,99,235,.25);
+
+}
+
+.service-icon{
+
+font-size:55px;
+
+margin-bottom:20px;
+
+}
+
+.service-card h3{
+
+font-size:24px;
+
+margin-bottom:18px;
+
+color:#f59e0b;
+
+}
+
+.service-card p{
+
+color:#dbe4ef;
+
+line-height:1.8;
+
+}

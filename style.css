@@ -1244,3 +1244,38 @@ color:#dbe4ef;
 word-break:break-word;
 
 }
+/* ================= FOOTER ================= */
+
+footer{
+
+padding:60px 20px;
+
+text-align:center;
+
+background:#050b17;
+
+margin-top:80px;
+
+}
+
+footer h2{
+
+font-size:34px;
+
+margin-bottom:15px;
+
+background:linear-gradient(90deg,#ffffff,#f59e0b);
+
+-webkit-background-clip:text;
+
+-webkit-text-fill-color:transparent;
+
+}
+
+footer p{
+
+color:#cbd5e1;
+
+margin-top:10px;
+
+}

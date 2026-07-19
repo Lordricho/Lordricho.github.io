@@ -820,3 +820,66 @@ grid-template-columns:1fr;
 }
 
 }
+/* ==========================================
+   CORE VALUES
+========================================== */
+
+.values{
+
+padding:110px 0;
+
+}
+
+.values-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:30px;
+
+}
+
+.value-card{
+
+padding:35px;
+
+background:rgba(255,255,255,.05);
+
+border:1px solid rgba(255,255,255,.10);
+
+border-radius:25px;
+
+backdrop-filter:blur(18px);
+
+transition:.35s ease;
+
+}
+
+.value-card:hover{
+
+transform:translateY(-10px);
+
+border-color:#10b981;
+
+box-shadow:0 20px 45px rgba(16,185,129,.25);
+
+}
+
+.value-card h3{
+
+font-size:24px;
+
+margin-bottom:18px;
+
+color:#f59e0b;
+
+}
+
+.value-card p{
+
+color:#dbe4ef;
+
+line-height:1.8;
+
+}

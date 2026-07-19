@@ -735,3 +735,88 @@ width:260px;
 }
 
 }
+/* ==========================================
+   VISION & MISSION
+========================================== */
+
+.vision-mission{
+
+padding:110px 0;
+
+}
+
+.vm-grid{
+
+display:grid;
+
+grid-template-columns:repeat(2,1fr);
+
+gap:35px;
+
+}
+
+.vm-card{
+
+padding:45px;
+
+background:rgba(255,255,255,.05);
+
+border:1px solid rgba(255,255,255,.10);
+
+border-radius:28px;
+
+backdrop-filter:blur(18px);
+
+transition:.35s ease;
+
+text-align:center;
+
+}
+
+.vm-card:hover{
+
+transform:translateY(-10px);
+
+border-color:#2563eb;
+
+box-shadow:0 20px 45px rgba(37,99,235,.25);
+
+}
+
+.vm-icon{
+
+font-size:55px;
+
+margin-bottom:20px;
+
+}
+
+.vm-card h3{
+
+font-size:30px;
+
+margin-bottom:18px;
+
+color:#f59e0b;
+
+}
+
+.vm-card p{
+
+font-size:17px;
+
+line-height:1.9;
+
+color:#dbe4ef;
+
+}
+
+@media(max-width:900px){
+
+.vm-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}

@@ -956,3 +956,126 @@ color:#dbe4ef;
 line-height:1.8;
 
 }
+/* ==========================================
+   PROJECTS
+========================================== */
+
+.projects{
+
+padding:110px 0;
+
+}
+
+.projects-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+gap:30px;
+
+}
+
+.project-card{
+
+padding:35px;
+
+background:rgba(255,255,255,.05);
+
+border:1px solid rgba(255,255,255,.10);
+
+border-radius:25px;
+
+backdrop-filter:blur(18px);
+
+transition:.35s;
+
+}
+
+.project-card:hover{
+
+transform:translateY(-10px);
+
+border-color:#2563eb;
+
+box-shadow:0 20px 45px rgba(37,99,235,.25);
+
+}
+
+.project-card h3{
+
+font-size:28px;
+
+margin:20px 0;
+
+color:#ffffff;
+
+}
+
+.project-card p{
+
+color:#dbe4ef;
+
+line-height:1.8;
+
+margin-bottom:25px;
+
+}
+
+.project-tags{
+
+display:flex;
+
+flex-wrap:wrap;
+
+gap:10px;
+
+margin-bottom:25px;
+
+}
+
+.project-tags span{
+
+padding:8px 16px;
+
+border-radius:20px;
+
+background:#2563eb;
+
+font-size:14px;
+
+font-weight:600;
+
+}
+
+.project-status{
+
+display:inline-block;
+
+padding:8px 16px;
+
+border-radius:20px;
+
+font-size:14px;
+
+font-weight:700;
+
+margin-bottom:15px;
+
+}
+
+.active{
+
+background:#10b981;
+
+color:#fff;
+
+}
+
+.planning{
+
+background:#f59e0b;
+
+color:#081120;
+
+}

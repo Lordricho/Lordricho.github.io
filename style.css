@@ -2316,3 +2316,21 @@ color:#fff;
     font-weight:700;
     box-shadow:0 10px 25px rgba(37,99,235,.35);
 }
+.hero-text h4{
+    color:red !important;
+}
+
+.hero-text h1{
+    color:yellow !important;
+    background:none !important;
+    -webkit-text-fill-color:yellow !important;
+}
+
+.hero-text h2{
+    color:lime !important;
+}
+
+.hero-badge{
+    background:red !important;
+    color:white !important;
+}

@@ -1079,3 +1079,48 @@ background:#f59e0b;
 color:#081120;
 
 }
+/* ================= SKILLS ================= */
+
+.skills{
+
+padding:110px 0;
+
+}
+
+.skills-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+
+gap:20px;
+
+}
+
+.skill-card{
+
+padding:25px;
+
+text-align:center;
+
+background:rgba(255,255,255,.05);
+
+border:1px solid rgba(255,255,255,.10);
+
+border-radius:20px;
+
+font-weight:700;
+
+font-size:18px;
+
+transition:.35s;
+
+}
+
+.skill-card:hover{
+
+background:linear-gradient(135deg,#2563eb,#10b981);
+
+transform:translateY(-8px);
+
+}
